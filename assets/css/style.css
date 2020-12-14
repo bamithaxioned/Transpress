@@ -99,8 +99,7 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
-  width: 86%; 
+  max-width: 1157px;
   margin: 0 auto;
 }
 
@@ -109,11 +108,87 @@ li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Storing Colors */
+:root {
+  --primary-color: #39AF96;
+  --secondar-color: #333333;
+  --third-color: #fff;
+  --fourth-color: #888888;
+}
+/* Common Classes */
+.btn {
+  padding: 12px 28px;
+  background-color: var(--primary-color);
+  border-radius: 9px;
+  border: none;
+  font-size: 13.5px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: var(--third-color);
+  font-weight: 500;
+}
+
+.bold { 
+  font-weight: 700; 
+  color: #000;
+}
+
+.thin { 
+  font-weight: 400; 
+  font-size: 12px;
+  text-transform: lowercase;
+  color: var(--fourth-color);
+  opacity: .8;
+  letter-spacing: .5px;
+
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header { padding: 53px 0; }
+
+header .wrapper,
+.address-bar {
+  display: flex;
+  align-items: center;
+}
+
+.address-bar li {
+  display: flex;
+  margin-left: 22px;
+  align-items: center;
+}
+
+header .wrapper { justify-content: space-between; }
+
+.logo {
+  width: 237px;
+  height: 30px;
+}
+.logo a { text-indent: -999999px; }
+
+.logo img {
+  text-indent: 0;
+  float: right;
+}
+
+.contact-content .fa ,
+.address-content .fa ,
+.time-content .fa {
+  font-size: 40px;
+  margin-right: 20px;
+  color: var(--primary-color);
+}
+
+
+.contact-box a ,
+.contact-box span{
+  display: block;
+}
 /*=================================
   Header styling ends here
 =================================*/  
