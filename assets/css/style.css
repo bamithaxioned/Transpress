@@ -196,6 +196,71 @@ header .wrapper { justify-content: space-between; }
 /*=================================
   main styling starts here
 =================================*/
+/* Banner styling starts here */
+
+.banner-header {
+  background-color: #101010;
+  padding: 17.5px;
+}
+
+.banner-header .wrapper {
+  display: flex;
+  align-items: var(--primary-color);
+  justify-content: space-between;
+}
+
+.navigation-list { margin: 0 11px; }
+
+.navigation-link {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: var(--third-color);
+  transition: .3s;
+}
+
+.navigation-link .fa { margin-left: 4px; } 
+.navigation-link:hover { color: var(--primary-color); }
+input[type= "search"]{ display: none; }
+
+.search-link , 
+.cart-link {
+  text-indent: -999999px;
+}
+
+.search-link .fa, 
+.cart-link .fa {
+  float: right;
+  text-indent: 0px;
+  color: var(--third-color);
+  margin: 0px 5px;
+  font-size: 18px;
+}
+
+.hamburger {
+  overflow: hidden;
+  text-indent: -999999px;
+  cursor: pointer;
+  z-index: 3;
+  display: none;
+}
+
+.line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: var(--primary-color);
+  margin: 7px 0px;
+  transition: .5s
+}
+
+.hamburger:hover .line { background-color: var(--primary-color); }
+.hamburger:hover .line1 { transform:  translateY(12px) rotate(41deg); }
+.hamburger:hover .line2 { transform: scale(0); }
+.hamburger:hover .line3 { transform: translateY(-10px) rotate(-46deg);}
+
+
+/* Banner styling ends here */
 
 /*=================================
   main styling ends here
