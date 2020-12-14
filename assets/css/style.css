@@ -500,6 +500,48 @@ input[type= "search"]{ display: none; }
 .fa-play::before { margin-left: 10px; }
 /* About styling ends here */
 
+/* counter styling starts here */
+
+.counter {
+  padding: 60px 0 50px;
+  background-color: var(--secondar-color);
+  color: #fff;
+}
+
+.counter-list {
+  width: 24.5%;
+  padding: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: .4s;
+}
+
+.counter-list:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 5px #fff;
+}
+
+.counter-list span {
+  display: block;
+}
+
+.counter-list .fa {
+  color: var(--primary-color);
+  font-size: 45px;
+}
+
+.numbers {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.counter-list .heading-three {
+  color: #fff;
+  opacity: .8;
+}
+/* counter styling ends here */
+
+
 /*=================================
   main styling ends here
 =================================*/
