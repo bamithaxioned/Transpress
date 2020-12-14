@@ -444,7 +444,61 @@ input[type= "search"]{ display: none; }
 
 /* Services styling ends here */
 
+/* About styling starts here */
 
+.about-list {
+  width: 51.2%;
+  height: 500px;
+  padding: 100px 60px;
+  background-color: #F9F9F9;
+  overflow: hidden;
+}
+
+.about-list .heading-four { text-align: left; }
+
+.about-list .heading-four::after {
+  left: 0;
+  transform: translateX(0);
+}
+
+.about-para { font-size: 14px; }
+.about-para:nth-child(3){ margin: 50px 0 25px 0; }
+
+.video {
+  width: 48.2%;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  background: url("../images/video.jpeg") no-repeat center/cover;
+}
+
+.video::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .6;
+}
+
+.video span {
+  padding: 25px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.fa-play::before { margin-left: 10px; }
+/* About styling ends here */
 
 /*=================================
   main styling ends here
