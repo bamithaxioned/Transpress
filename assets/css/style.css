@@ -541,6 +541,79 @@ input[type= "search"]{ display: none; }
 }
 /* counter styling ends here */
 
+/* counter styling ends here */
+
+/* counter styling ends here */
+
+.features {
+  padding: 93px 0;
+}
+
+.features .feature-list {
+  width: 49%;
+  padding: 0 25px;
+  vertical-align: top;
+}
+
+.more-about-us-list { 
+  width: 100%; 
+}
+
+.more-about-us-list.active .more-about-content {
+  display: block;
+}
+
+.more-about-heading {
+  border: 1px solid #f1f1f1;
+  border-bottom: none;
+  display: flex;
+  vertical-align: top;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.features .heading-four {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.features .heading-four::after { display: none; }
+
+.fa-arrow-right {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  background-color: #F9F9F9;
+  color: #bbb;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-six {
+  color: #343435;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.heading-six .fa {
+  margin: 0 17px;
+  color: #BBB;
+  font-size: 29px;
+}
+
+.more-about-content { 
+  display: none;
+  border: 1px solid #e1e1e1a3; 
+}
+
+.more-about-para {
+  padding: 22px;
+  color: #bbb;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 /*=================================
   main styling ends here
