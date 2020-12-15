@@ -349,7 +349,7 @@ input[type= "search"]{ display: none; }
   justify-content: space-around;
 }
 
-.feature-list {
+.banner-slider-list .feature-list {
   width: 21.6%;
   padding: 10px;
   background-color: #fff;
@@ -357,9 +357,9 @@ input[type= "search"]{ display: none; }
   transition: .4s ease-in-out;
 }
 
-.feature-list:hover { transform: scale(1.04); }
+.banner-slider-list .feature-list:hover { transform: scale(1.04); }
 
-.feature-list .fa {
+.banner-slider-list .feature-list .fa {
   color: var(--primary-color);
   font-size: 100px;
 }
@@ -372,7 +372,7 @@ input[type= "search"]{ display: none; }
 }
 /* Banner styling ends here */
 
-/* Services styling ends here */
+/* Services styling starts here */
 
 .services { padding: 95px 0; }
 
