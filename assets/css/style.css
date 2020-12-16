@@ -784,7 +784,7 @@ input[type= "search"]{ display: none; }
 .news-list-content {
   border: 1px solid #e6e1e1;
   border-top: none;
-  padding: 20px 22px;
+  padding: 20px 22px 15px;
 }
 
 .news-list-content .heading-five {
@@ -814,9 +814,10 @@ input[type= "search"]{ display: none; }
 }
 
 .news-para {
-  font-size: 13.3px;
+  font-size: 13.5px;
   color: var(--fourth-color);
   margin-bottom: 8px;
+  line-height: 21px;
 }
 
 .more-btn {
@@ -826,6 +827,7 @@ input[type= "search"]{ display: none; }
   letter-spacing: .5px;
   color: var(--fourth-color);
 }
+
 .more-btn::after {
   content: "\f061";
   font-family: FontAwesome;
