@@ -422,17 +422,32 @@ input[type= "search"]{ display: none; }
 }
 
 .feature-list {
-  width: 21.9%;
-  padding: 10px;
+  width: 21.99%;
+  padding: 8.1px;
   background-color: #fff;
   cursor: pointer;
   transition: .4s ease-in-out;
 }
 
-.banner-slider-list .feature-list .fa {
+.feature-area .fa {
   color: var(--primary-color);
-  font-size: 100px;
+  text-indent: -999999px;
 }
+
+.feature-area .fa::after {
+  content: "";
+  margin-bottom: 1px;
+  font-family: FontAwesome;
+  font-size: 100px;
+  text-indent: 0;
+  float: right;
+  clear: both;
+}
+
+.feature-area .feature-list:nth-child(1) .fa::after { content: "\f0d1"; }
+.feature-area .feature-list:nth-child(2) .fa::after { content: "\f21a"; }
+.feature-area .feature-list:nth-child(3) .fa::after { content: "\f072"; }
+.feature-area .feature-list:nth-child(4) .fa::after { content: "\f0d1"; }
 
 .heading-three {
   margin: 10px 0;
@@ -686,7 +701,7 @@ input[type= "search"]{ display: none; }
 .features { padding: 93px 0; }
 
 .feature-content-list,
-.feature-list {
+.features .feature-list {
   width: 49%;
   padding: 0 14px 0 22px;
   vertical-align: top;
@@ -850,7 +865,5 @@ input[type= "search"]{ display: none; }
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
-
 
 }  
