@@ -422,14 +422,12 @@ input[type= "search"]{ display: none; }
 }
 
 .feature-list {
-  width: 21.6%;
+  width: 21.9%;
   padding: 10px;
   background-color: #fff;
   cursor: pointer;
   transition: .4s ease-in-out;
 }
-
-.banner-slider-list .feature-list:hover { transform: scale(1.04); }
 
 .banner-slider-list .feature-list .fa {
   color: var(--primary-color);
@@ -439,6 +437,7 @@ input[type= "search"]{ display: none; }
 .heading-three {
   margin: 10px 0;
   color: var(--secondar-color);
+  font-size: 17px;
   font-weight: 600;
   text-transform: uppercase;
 }
