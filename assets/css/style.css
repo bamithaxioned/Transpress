@@ -445,10 +445,10 @@ input[type= "search"]{ display: none; }
 
 /* Services styling starts here */
 
-.services { padding: 95px 0; }
+.services { padding: 95px 0 92px; }
 
 .heading-four {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   position: relative;
   color: var(--secondar-color);
   font-size: 30px;
@@ -477,9 +477,9 @@ input[type= "search"]{ display: none; }
 
 .service-list {
   width: 30.5%;
-  padding: 16px 13px;
+  padding: 16.5px 14px 32px;
   border: 1.5px solid rgba(136, 136, 136, 0.137);
-  margin:  0 18px 17px 0;
+  margin: 0 18px 21px 0;
   display: flex;
   cursor: pointer;
   transition: .4s;
@@ -487,32 +487,49 @@ input[type= "search"]{ display: none; }
 
 .service-list:hover { box-shadow: 0 0 10px var(--primary-color); }
 
-.heading-five {
-  margin-bottom: 7px;
-  color: var(--secondar-color);
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.service-list span {
-  width: 134px;
-  height: 39px;
+.service-list .fa {
+  width: 137px;
+  height: 42px;
   border-radius: 50%;
-  margin-right: 31px;
+  margin-right: 36px;
+  position: relative;
   background-color: #EEEEEE;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-indent: -999999px;
 }
 
-.service-list .fa { font-size: 20px; }
+.service-list .fa::after {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 19px;
+  float: right;
+  clear: both;
+  text-indent: 0;
+}
+
+.service-list:nth-child(1) .fa::after{ content: "\f0d1";}
+.service-list:nth-child(2) .fa::after{ content: "\f0c9";}
+.service-list:nth-child(3) .fa::after{ content: "\f017";}
+.service-list:nth-child(4) .fa::after{ content: "\f1b9";}
+.service-list:nth-child(5) .fa::after{ content: "\f080";}
+.service-list:nth-child(6) .fa::after{ content: "\f0ac";}
+
+.heading-five {
+  margin-top: -5px;
+  color: var(--secondar-color);
+  font-size: 16.7px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 
 .service-para {
+  margin-top: 8px;
   color: var(--fourth-color);
-  font-size: 13.5px;
+  font-size: 13.2px;
+  line-height: 17px
 }
-
 /* Services styling ends here */
 
 /* About styling starts here */
