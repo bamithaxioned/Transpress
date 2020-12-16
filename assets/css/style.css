@@ -630,7 +630,7 @@ input[type= "search"]{ display: none; }
 /* counter styling starts here */
 
 .counter {
-  padding: 60px 0 50px;
+  padding: 60px 0 41px;
   background-color: var(--secondar-color);
   color: #fff;
 }
@@ -643,29 +643,42 @@ input[type= "search"]{ display: none; }
   transition: .4s;
 }
 
-.counter-list:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 5px #fff;
-}
-
-.counter-list span {
-  display: block;
-}
+.counter-list span { display: block; }
 
 .counter-list .fa {
+  display: flex;
+  position: relative;
   color: var(--primary-color);
   font-size: 45px;
+  align-items: center;
+  justify-content: center;
+  text-indent: -999999px;
 }
 
+.counter-list .fa::after {
+  content: "";
+  font-family: "FontAwesome";
+  text-indent: 0;
+}
+
+.counter-list:nth-child(1) .fa::after { content:"\f1b3"; }
+.counter-list:nth-child(2) .fa::after { content:"\f0c0"; }
+.counter-list:nth-child(3) .fa::after { content:"\f164"; }
+.counter-list:nth-child(4) .fa::after { content:"\f118"; }
+
 .numbers {
-  font-size: 30px;
+  margin: 4.5px 0 14px;
+  font-size: 31px;
   font-weight: 600;
+  letter-spacing: .5px;
 }
 
 .counter-list .heading-three {
   color: #fff;
+  font-size: 15px;
   opacity: .8;
 }
+
 /* counter styling ends here */
 
 /* counter styling ends here */
