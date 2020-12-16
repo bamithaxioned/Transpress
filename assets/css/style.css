@@ -923,7 +923,7 @@ input[type= "search"]{ display: none; }
     height: 100vh;
     position: absolute;
     top: 0;
-    left: -420px;
+    left: -100%;
     background-color: var(--secondar-color);
     box-shadow: 2px 2px 5px #000;
     transition: .4s;
