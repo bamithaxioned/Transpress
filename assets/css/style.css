@@ -1086,7 +1086,7 @@ input[type= "search"]{ display: none; }
     -ms-flex-pack: justify;
     justify-content: space-between;
    }
-   
+
   .about-list { padding: 50px; }
   .about-para:nth-child(2) { margin: 25px 0; }
 
@@ -1142,6 +1142,8 @@ input[type= "search"]{ display: none; }
     width: 50px;
     bottom: -8px;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
