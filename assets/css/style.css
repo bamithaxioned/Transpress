@@ -1116,6 +1116,19 @@ input[type= "search"]{ display: none; }
     width: 47%;
     margin-bottom: 20px;
   }
+
+  .latest-news {
+    flex-wrap: wrap; 
+    justify-content: center;
+  }
+
+  .news-time::before { font-size: 22px; }
+  .latest-news-list { width: 80%; }
+  .latest-news-list:nth-child(2) {display: none;}
+  .news-list-content .heading-five { font-size: 19px; }
+  .news-time { font-size: 20px; }
+  .news-para { font-size: 18px; }
+  .more-btn { font-size: 19px; }
 }
 
 /*media query for 640px starts here*/
