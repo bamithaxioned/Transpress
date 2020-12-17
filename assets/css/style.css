@@ -502,7 +502,7 @@ input[type= "search"]{ display: none; }
 .service-list {
   width: 30.5%;
   padding: 16.5px 14px 32px;
-  border: 1.5px solid rgba(136, 136, 136, 0.137);
+  border: 1.5px solid rgba(136, 136, 136, .137);
   margin: 0 18px 21px 0;
   display: flex;
   cursor: pointer;
@@ -942,16 +942,16 @@ input[type= "search"]{ display: none; }
   }
 
   .about-list {
-    padding: 25px;
-    text-align: center;
     width: 100%;
     height: auto;
+    padding: 25px;
+    text-align: center;
   }
 
   .about-list:last-child {
-    position: relative;
     width: 100%;
     height: 300px;
+    position: relative;
     background-size: 101% 125%;
   }
 
@@ -1069,9 +1069,10 @@ input[type= "search"]{ display: none; }
 
   .header-top {
     padding: 15px 0;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
+
   .contact-btn, .read-btn {
     padding: 6px 10px;
     font-size: 11px;
@@ -1087,12 +1088,12 @@ input[type= "search"]{ display: none; }
   }
 
   .address-bar li {
-    display: flex;
-    align-items: center;
     width: 48%;
-    justify-content: center;
     margin: 0;
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .feature-area {
@@ -1111,8 +1112,8 @@ input[type= "search"]{ display: none; }
   .counter-area {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .counter-list { width: 48%; }
@@ -1121,6 +1122,7 @@ input[type= "search"]{ display: none; }
   .features .feature-list {
     padding: 10px;
   }
+
   .latest-news {
     flex-wrap: wrap;
     justify-content: center;
@@ -1137,9 +1139,8 @@ input[type= "search"]{ display: none; }
 
 /*media query for 420px starts here*/
  @media only screen and (max-width: 420px) {
-  .service-list {
-    padding: 10px;
-  }
+  .service-list { padding: 10px; }
+
   .address-bar li {
     width: 80%; 
     margin-bottom: 15px;
@@ -1160,8 +1161,8 @@ input[type= "search"]{ display: none; }
   .about-para { font-size: 12px; }
 
   .heading-six {
-    font-size: 13px;
     width: 100%;
+    font-size: 13px;
   }
 
   .heading-six::before {
@@ -1174,39 +1175,7 @@ input[type= "search"]{ display: none; }
   .features { padding: 20px 0; }
 
   .heading-two {
-    font-size: 20px;
     margin-top: 10px;
+    font-size: 20px;
   }
 } 
-
-
-/*media query for 370px starts here*/
-/* @media only screen and (max-width: 370px) {
-
-  .heading-two { font-size: 25px; }
-  .welcome-note:nth-child(2) { margin-bottom: 10px; }
-  .right-arrow { width: 40px; }
-  .about-list { padding: 10px; }
-}
-
-/*media query for 320px starts here*/
-/* @media only screen and (max-width: 320px) {
-
-  .heading-two { font-size: 21px; }
-  .service-list { width: 95%; }
-
-  .service-list .fa {
-    width: 200px;
-    margin-right: 13px;
-  }
-
-  .heading-six { font-size: 12px; }
-
-  .heading-six::before {
-    width: 40px;
-    height: 40px;
-    font-size: 25px;
-  }
-
-  .latest-news-list { width: 96%; }
-} */
