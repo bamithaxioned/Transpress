@@ -934,6 +934,12 @@ input[type= "search"]{ display: none; }
   }
 
   .service-list .fa { width: 120px; }
+
+  .btn,
+  .service-list, 
+  .navigation-link {
+    pointer-events: none;
+  }
 }
 
 /*media query for 1024px starts here*/
