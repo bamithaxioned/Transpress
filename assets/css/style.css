@@ -474,8 +474,13 @@ input[type= "search"]{ display: none; }
 
 .feature-area {
   margin: 30px 0 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -484,6 +489,8 @@ input[type= "search"]{ display: none; }
   padding: 8.1px;
   background-color: #fff;
   cursor: pointer;
+  -webkit-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
   transition: .4s ease-in-out;
 }
 
