@@ -1409,7 +1409,13 @@ input[type= "search"]{ display: none; }
   }
 
   .service-para { font-size: 13px; }
-  .counter-area { justify-content: center; }
+
+  .counter-area { 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; 
+  }
+  
   .counter-list { width: 80%; }
   .latest-news-list { width: 90%; }
   .about-list { padding: 10px; }
