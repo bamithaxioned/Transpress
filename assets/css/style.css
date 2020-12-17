@@ -547,11 +547,16 @@ input[type= "search"]{ display: none; }
   left: 50%;
   background-color: var(--primary-color);
   border-radius: 10px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .service-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -560,12 +565,19 @@ input[type= "search"]{ display: none; }
   padding: 16.5px 14px 32px;
   border: 1.5px solid rgba(136, 136, 136, .137);
   margin: 0 18px 21px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
 }
 
-.service-list:hover { box-shadow: 0 0 10px var(--primary-color); }
+.service-list:hover { 
+  -webkit-box-shadow: 0 0 10px var(--primary-color);
+  box-shadow: 0 0 10px var(--primary-color); 
+}
 
 .service-list .fa {
   width: 137px;
@@ -574,8 +586,14 @@ input[type= "search"]{ display: none; }
   margin-right: 36px;
   position: relative;
   background-color: #EEEEEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-indent: -999999px;
 }
@@ -645,6 +663,8 @@ input[type= "search"]{ display: none; }
   width: 43px;
   bottom: -8px;
   left: 4px;
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
   transform: translateX(0px);
 }
 
@@ -688,6 +708,8 @@ input[type= "search"]{ display: none; }
   color: #fff;
   font-size: 50px;
   cursor: pointer;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-indent: -999999px;
 }
@@ -714,7 +736,11 @@ input[type= "search"]{ display: none; }
   top: 0;
   left: 0;
   background-color: rgba(0, 0 ,0, .95);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -744,7 +770,11 @@ input[type= "search"]{ display: none; }
   text-indent: 0;
 }
 
-.video-content.active { display: flex; }
+.video-content.active { 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex  
+}
 /* About styling ends here */
 
 /* counter styling starts here */
