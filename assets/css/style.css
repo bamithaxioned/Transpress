@@ -131,12 +131,15 @@ li {
   font-family: 'Poppins', sans-serif;
   letter-spacing: .5px;
   text-transform: uppercase;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
 .btn:hover {
   background-color: var(--third-color);
   color: var(--primary-color);
+  -webkit-box-shadow: 2px 2px 5px var(--secondar-color);
   box-shadow: 2px 2px 5px var(--secondar-color);
 }
 
