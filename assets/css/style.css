@@ -1040,17 +1040,28 @@ input[type= "search"]{ display: none; }
     left: -100%;
     background-color: var(--secondar-color);
     box-shadow: 2px 2px 5px #000;
+    overflow: hidden;
     transition: .4s;
   }
 
   .navigation.active { left: 0; }
 
+  .dropdown {
+    width: 100%;
+    padding: 8px;
+    display: block;
+    position: static;
+    top: 0; 
+    left: 0;
+  }
+  
+  .dropdown-list { padding: 3px 0; }
+  .dropdown-link { border: none; }
+
   .navigation-list {
-    margin: 30px;
+    margin: 35px 25px 20px;
     display: block;
   }
-
-  .navigation.active .dropdown { left: 18%; }
 
   .header-bottom .wrapper {
     display: flex;
