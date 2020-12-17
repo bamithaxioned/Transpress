@@ -790,17 +790,25 @@ input[type= "search"]{ display: none; }
   padding: 15px;
   cursor: pointer;
   text-align: center;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
 }
 
 .counter-list span { display: block; }
 
 .counter-list .fa {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   color: var(--primary-color);
   font-size: 45px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-indent: -999999px;
 }
