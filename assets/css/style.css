@@ -1074,9 +1074,19 @@ input[type= "search"]{ display: none; }
   .wrapper { width: 95%; }
   .bold { font-size: 14px; }
   .welcome-note:nth-child(2) { margin-top: 0; }
-  .service-area { justify-content: space-around; }
+
+  .service-area {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
   .service-list { margin: 0 0 20px; }
-  .latest-news { justify-content: space-between; }
+  .latest-news {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+   }
+   
   .about-list { padding: 50px; }
   .about-para:nth-child(2) { margin: 25px 0; }
 
