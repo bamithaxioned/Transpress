@@ -856,8 +856,12 @@ input[type= "search"]{ display: none; }
 .more-about-heading {
   border: 1px solid #f1f1f1;
   border-bottom: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   vertical-align: top;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
 }
@@ -873,10 +877,16 @@ input[type= "search"]{ display: none; }
 .right-arrow {
   width: 62px;
   height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #F9F9F9;
   color: #bbb;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-indent: -999999px;
 }
@@ -890,10 +900,14 @@ input[type= "search"]{ display: none; }
 }
 
 .heading-six {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #343435;
   font-size: 17px;
   font-weight: 600;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -902,12 +916,18 @@ input[type= "search"]{ display: none; }
   width: 62px;
   height: 62px;
   margin-left: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #bbb;
   font-family: FontAwesome;
   font-size: 30px;
   font-weight: 500;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -930,7 +950,10 @@ input[type= "search"]{ display: none; }
 
 .latest-news {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
